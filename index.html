@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de filmes</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script1.js"></script>
+</head>
+<body>
+    <header class="logo">
+        <img src="https://images.vexels.com/media/users/3/153737/isolated/preview/f73c64a90025aa54b42e9b5bd4d1a0bd-icone-de-traco-colorido-do-monitor-html.png" width=80 heigth=60 alt="logo"/>
+        <h1>WebCinema</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">Filmes</a></li>
+            <li><a href="./promo.html">Promoção</a></li>
+            <li><a href="#">Admin</a>
+                <ul>
+                    <li><a href="./filmes.html">Ajustes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div class="title">
+            <h2>Cadastro de Filmes</h2>
+        </div>
+        <div class="card">
+            <div class="lineInput">
+                <label>Nome:</label>
+                <input type="text" id="nomeFilme" placeholder="Nome do Filme...">      
+            </div>
+            <div class="lineInput">
+                <label>Gênero:</label>
+                <input type="text" id="generoFilme" placeholder="Gênero do Filme...">      
+            </div>
+            <div class="lineInput">
+                <label>Tempo:</label>
+                <input type="text" id="tempoFilme" placeholder="Tempo de Duração...">      
+            </div>
+            <div class="lineInput">
+                <label>Sinopse:</label>
+                <textarea cols="33" rows="5" id="sinopseFilme" placeholder="Sinopse do Filme..."></textarea>     
+            </div>
+            <button onclick="filme.salvar()" id="botao1">Salvar</button>
+            <button onclick="filme.cancelar()">Cancelar</button>
+        </div>
+        <h2>Cadastrados</h2>
+        <div class="content">
+            <table border="1">                
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Filmes Cadastrados</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody id ="tbody">
+                    
+                </tbody>
+            </table>    
+        </div>
+    </main>
+    
+<footer><i>© 2022 Vidal</i></footer>
+</body>
+</html>
