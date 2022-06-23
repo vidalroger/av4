@@ -11,8 +11,8 @@ class Filme {
         
         if(this.validaCampos(filme)) {
             if (this.editaId == null) {
-                this.adicionar(filme);
-            } else {
+                this.adicionar(filme)}
+            else {
                 this.atualizar(this.editaId, filme);
             }
            
@@ -41,12 +41,12 @@ class Filme {
             td_acoes.classList.add('img');
             
             let imgEditar = document.createElement('img');
-            imgEditar.src = 'img/editar.png';
+            imgEditar.src = 'https://cdn-icons.flaticon.com/png/512/4122/premium/4122640.png?token=exp=1656027350~hmac=e391a5b29c19e2807adfee1e93eb65fa';
             imgEditar.setAttribute("onclick","filme.edicao("+ JSON.stringify(this.arrayFilmes[i]) +")");
             
             
             let imgDeletar = document.createElement('img');
-            imgDeletar.src = 'img/deletar.png';                         
+            imgDeletar.src = 'https://cdn-icons.flaticon.com/png/512/4347/premium/4347443.png?token=exp=1656027204~hmac=4f0bd55510c1592f269fd912a5a9d7d5';                         
             imgDeletar.setAttribute("onclick","filme.deletar("+ this.arrayFilmes[i].id +")");
             
             
